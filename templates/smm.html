@@ -1,0 +1,56 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 p-1">
+                <h3 class="p-4"><a href="{% url 'pages:home' %}"><img class="p-1 " src="https://img.icons8.com/windows/34/000000/circled-left-2.png"/></a>SMM</h3>
+            </div>
+            <div class="col-md-5">
+                <a href="">
+                    <p style="font-size: 22px;">+999999999</p>
+                </a>
+                <a href="">
+                    <p style="font-size: 20px;font-weight: 500;"><img src="https://img.icons8.com/color/28/000000/telegram-app--v5.png" />Мы в телеграмме</p>
+                </a>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <td> <a class="courses" href="{% url 'pages:whysmm' %}"> Smm nma uchun kerak</a> </td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:brif1' %}"> Brif haqida</a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:brif2' %}"> Birf davomi</a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:communicty' %}"> Communicty Manangment </a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:target1' %}"> Targeting kirish</a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:target2' %}"> Targeting 2-qism </a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:target3' %}"> Targeting yoqish </a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:target' %}"> Targeting </a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:ligmagnit' %}"> Ligmagnit </a></td>
+                </tr>
+                <tr>
+                    <td><a class="courses" href="{% url 'pages:retarget' %}"> Retarget </a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 p-1">
+             <h3 class="p-4"><a href="{% url 'pages:sales' %}"><img class="p-1" src="https://img.icons8.com/windows/34/000000/circled-left-2.png"/></a>Отдел Продаж (Видео продукция)</h3>
+            </div>
+            <div class="col-md-5">
+            <a href=""><p style="font-size: 22px;">+999999999</p></a>
+           <a href=""><p style="font-size: 20px;font-weight: 500;"><img src="https://img.icons8.com/color/28/000000/telegram-app--v5.png"/>Мы в телеграмме</p></a> 
+            </div>
+          </div>
+          <video class="video"  preload="none" controls controlsList="nodownload poster">
+            <source src="{% static './sales department/Bright Media VideoProduction xizmatlari.mp4' %}">
+        </video>
+        <h3>Домашние Задания</h3>
+        <ul>
+            <li style="font-size: 20px;font-weight: 500;">test lorem ipsum dolor</li>
+            <li style="font-size: 20px;font-weight: 500;">test loprkeokrf kpoejrf oiejrfn</li>
+            <li style="font-size: 20px;font-weight: 500;">test niorehifjer fjhoirenfi</li>
+            <li style="font-size: 20px;font-weight: 500;">test noirejfoierjoiferfnerf eproinfureoren</li>
+        </ul>
+        <div class="form-check">
+            <p>1)Что такое что такое?</p>
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios12" value="option4" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              a) такое что
+            </label>
+            
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios34" value="option5" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              b) что такое
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios23" value="option6" checked>
+            <label class="form-check-label" for="exampleRadios1">
+             с) так что
+            </label>
+          </div>
+          <div class="form-check">
+              <br>
+            <p>2)Что такое что такое?</p>
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                a) такое что
+              </label>
+              
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                b) что такое
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+               с) так что
+               </label>
+            <br>
+            <br>
+            <button class="btn btn-primary">Отправить</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+   <br>
+{% endblock %}

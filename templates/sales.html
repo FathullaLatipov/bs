@@ -1,0 +1,41 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 p-1">
+             <h3 class="p-4"><a href="{% url 'pages:home' %}"><img class="p-1" src="https://img.icons8.com/windows/34/000000/circled-left-2.png"/></a>Отдел Продаж</h3>
+            </div>
+            <div class="col-md-5">
+            <a href=""><p style="font-size: 22px;">+999999999</p></a>
+            <a href=""><p style="font-size: 20px;font-weight: 500;"><img src="https://img.icons8.com/color/28/000000/telegram-app--v5.png"/>Мы в телеграмме</p></a> 
+            </div>
+          </div>
+          <table class="table table-striped" >
+            <tbody>
+              <tr>
+                <td> <a class="courses" href="{% url 'pages:introduction' %}"> Kirish</a> </td>
+              </tr>
+              <tr>
+                <td><a class="courses" href="{% url 'pages:marketing' %}"> Marketing Haqida</a></td>
+              </tr>
+              <tr>
+                <td><a class="courses" href="{% url 'pages:client' %}"> Mijoz bilan gaplashish</a></td>
+              </tr>
+              <tr>
+                <td><a class="courses" href="{% url 'pages:clients' %}"> Mijoz topish usullari</a></td>
+              </tr>
+              <tr>
+                <td><a class="courses" href="{% url 'pages:advertising' %}"> Reklama turlari</a></td>
+              </tr>
+              <tr>
+                <td><a class="courses" href="{% url 'pages:videoproduction' %}"> VideoProduction xizmatlari </a></td>
+              </tr>
+              <tr>
+                <td><a class="courses" href="{% url 'pages:web' %}"> Web xizmatlari </a></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+{% endblock %}
