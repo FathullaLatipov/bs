@@ -1,11 +1,19 @@
 {% extends 'base1.html' %}
 {% load static %}
 {% block content %}
+<style>
+    .left{
+    background-color: #ffce33;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    transition: all 0.3s ease 0s;
+    }
+</style>
 
     <div class="container">
         <div class="row">
             <div class="col-md-7 p-1">
-                <h3 class="p-4"><a href="{% url 'pages:smm' %}"><img class="p-1" src="https://img.icons8.com/windows/34/000000/circled-left-2.png"/></a> Brif davomi</h3>
+                <h3 class="p-4"><a href="{% url 'pages:smm' %}"><img class="left p-1" src="https://img.icons8.com/windows/34/000000/circled-left-2.png"/></a> Brif davomi</h3>
             </div>
             <div class="col-md-5">
 <!--                <a href="">-->
