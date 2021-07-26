@@ -21,59 +21,82 @@
           <video class="video"  preload="none" controls controlsList="nodownload poster">
             <source src="{% static './sales department/Bright Media Reklama turlari.mp4' %}">
         </video>
-        <h3>Домашние Задания</h3>
-        <ul>
-            <li style="font-size: 20px;font-weight: 500;">test lorem ipsum dolor</li>
-            <li style="font-size: 20px;font-weight: 500;">test loprkeokrf kpoejrf oiejrfn</li>
-            <li style="font-size: 20px;font-weight: 500;">test niorehifjer fjhoirenfi</li>
-            <li style="font-size: 20px;font-weight: 500;">test noirejfoierjoiferfnerf eproinfureoren</li>
-        </ul>
-        <div class="form-check">
-            <p>1)Что такое что такое?</p>
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios12" value="option4" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              a) такое что
-            </label>
-            
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios34" value="option5" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              b) что такое
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios23" value="option6" checked>
-            <label class="form-check-label" for="exampleRadios1">
-             с) так что
-            </label>
-          </div>
-          <div class="form-check">
-              <br>
-            <p>2)Что такое что такое?</p>
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-                a) такое что
-              </label>
-              
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              <label class="form-check-label" for="exampleRadios1">
-                b) что такое
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              <label class="form-check-label" for="exampleRadios1">
-               с) так что
-              </label>
-            <br>
-            <br>
+
+<!--        1. Tashqi reklamaning asosiylariga nimalar kiradi?
+a) baner, tv, radio
+  ) baner, avtobus, led manitor
+c) avtobus, led manitor, smm
+
+2. Tashqi reklamalar qanday reklama hisoblanadi?
+  ) offline
+b) online
+c) marketing
+
+3. Qaysi bir reklamaning foydasi koʻproq?
+a) offline
+  ) online
+c) OAV
+
+4. Brend uchun qaysi reklama foydali?
+a) OAV
+b) online
+  ) offline
+
+5. OAV reklama turlariga nimalar kiradi?
+a) online
+b) baner, avtobus , led manitor
+  ) gazeta, jurnal, tv, radio-->
+  <form action="/action_page.php" >
+  <p>1. Tashqi reklamaning asosiylariga nimalar kiradi?</p>
+  <input type="radio" id="reklama" name="reklama" value="reklama">
+  <label for="reklama">baner, tv, radio</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">baner, avtobus, led manitor</label><br>
+<!--      true-->
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">avtobus, led manitor, smm</label>
+  <br>
+
+  <p>2. Tashqi reklamalar qanday reklama hisoblanadi? </p>
+  <input type="radio" id="age121" name="age121" value="30">
+  <label for="age121">offline</label><br>
+<!--      true -->
+  <input type="radio" id="age99" name="age99" value="60">
+  <label for="age99">online</label><br>
+  <input type="radio" id="age9" name="age9" value="100">
+  <label for="age9">marketing</label><br><br></label>
+
+        <p>3. Qaysi bir reklamaning foydasi koʻproq?</p>
+  <input type="radio" id="marketing va reklama" name="age1" value="30">
+  <label for="age1">offline</label><br>
+  <input type="radio" id="agess1" name="agess1" value="60">
+  <label for="agess1">online</label><br>
+<!--      true-->
+  <input type="radio" id="agess" name="agess" value="100">
+  <label for="agess">OAV</label><br><br></label>
+
+        <p>4. Brend uchun qaysi reklama foydali?</p>
+  <input type="radio" id="age12" name="age12" value="30">
+  <label for="age12">OAV</label><br>
+  <input type="radio" id="age22" name="age22" value="60">
+  <label for="age22">online</label><br>
+  <input type="radio" id="age31" name="age31" value="100">
+  <label for="age31">offline</label><br><br></label>
+<!--true-->
+
+       <p>OAV reklama turlariga nimalar kiradi?</p>
+  <input type="radio" id="age12222" name="age12222" value="30">
+  <label for="age12222">online</label><br>
+  <input type="radio" id="age223" name="age223" value="60">
+  <label for="age223">baner, avtobus , led manitor</label><br>
+  <input type="radio" id="age311" name="age311" value="100">
+  <label for="age311">gazeta, jurnal, tv, radio</label><br><br></label>
+<!--      true-->
+
             <button class="btn btn-primary">Отправить</button>
         </div>
         <br>
-        <br>
+  </form>
         <br>
         <br>
     </div>
