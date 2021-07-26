@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 p-1">
-             <h3 class="p-4"><a href="{% url 'pages:sales' %}"><img class="left p-1" src="https://img.icons8.com/windows/34/000000/circled-left-2.png"/></a>Отдел Продаж (Нахождения клиентов)</h3>
+             <h3 class="p-4"><a href="{% url 'pages:sales' %}"><img class="left p-1" src="https://img.icons8.com/windows/34/000000/circled-left-2.png"/></a>Mijoz topish usullari</h3>
             </div>
             <div class="col-md-5">
 <!--            <a href=""><p style="font-size: 22px;">+999999999</p></a>-->
@@ -23,24 +23,35 @@
             <source src="{% static './sales department/Bright Media Mijoz topish usullari.mp4' %}">
         </video>
   <form action="/action_page.php" >
-  <p>Please select your gender:</p>
+  <p>1. Bizning xizmatimizdan foydalanmoqchi boʻlgan korxonaning oylik daromadi qancha boʻlishi kerak? </p>
   <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label><br>
+  <label for="male">50.000.000</label><br>
   <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
+  <label for="female">5.000.000</label><br>
   <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label>
+  <label for="other">500.000.000</label>
+<!--      true-->
 
   <br>
 
-  <p>Please select your age:</p>
+  <p>2. Biz kimlar bilan shartnoma imzolamaymiz?</p>
   <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">0 - 30</label><br>
+  <label for="age1">goʻzallik salonlari, spa salonlar </label><br>
+<!--      true-->
   <input type="radio" id="age2" name="age" value="60">
-  <label for="age2">31 - 60</label><br>
+  <label for="age2">ishlab chiqaruvchi korxonalar</label><br>
   <input type="radio" id="age3" name="age" value="100">
-  <label for="age3">61 - 100</label><br><br>
+  <label for="age3">kasalxona va klinikalar</label><br><br>
     </label>
+
+       <p>3. Mijozlarni qayerdan va qanday topamiz?  </p>
+  <input type="radio" id="male2" name="gender" value="male">
+  <label for="male2">mijozlarni oʻzlari bizni topishadi</label><br>
+  <input type="radio" id="female2" name="gender" value="female">
+  <label for="female2">spravochnik va tashqi reklamalar orqali</label><br>
+<!--      true-->
+  <input type="radio" id="other2" name="gender" value="other">
+  <label for="other2">internet orqali</label>
 
             <button class="btn btn-primary">Отправить</button>
         </div>
